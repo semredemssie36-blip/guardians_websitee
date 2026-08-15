@@ -7,12 +7,10 @@
 @layer base {
   html {
     font-family: 'Inter', system-ui, sans-serif;
-    overflow-x: hidden;
   }
   
   body {
     @apply text-gray-900 leading-relaxed;
-    overflow-x: hidden;
     max-width: 100%;
   }
 

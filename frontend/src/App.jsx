@@ -24,9 +24,9 @@ function App() {
   return (
     <ThemeProvider>
       <Router>
-        <div className="min-h-screen theme-bg-background overflow-x-hidden">
+        <div className="min-h-screen theme-bg-background">
           <Navbar />
-          <main>
+          <main className="overflow-x-clip">
             <Routes>
               <Route path="/" element={<Home />} />
               <Route path="/about" element={<About />} />
