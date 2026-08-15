@@ -256,7 +256,7 @@ const Services = () => {
  border: 'border-guardians-navy',
  price: 'From ETB 2,500',
  turnaround: '24–48 hours',
- image: 'https://images.unsplash.com/photo-1576091160399-112ba8d25d1f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
+ image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQ8cn9IucjJiB0jnhtZTkRK7VI_BWfyqOwz1O9_uHLh442xwuttNcEl68&s=10',
  description: 'Guardians offers preventive health screening services for individuals and organizations. Our packages are designed to detect health issues early — when they are most treatable. The exact tests are determined by our medical team based on age, gender, and risk factors.',
  availableTests: [
  { name: 'Basic Health Screening', detail: 'Essential tests for routine health monitoring — ideal for adults 18–40' },

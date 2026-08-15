@@ -50,7 +50,7 @@ const HealthPackages = () => {
  price: 'ETB 6,500',
  originalPrice: 'ETB 8,200',
  description: 'Complete assessment for overall well-being with detailed health analysis',
- image: 'https://images.unsplash.com/photo-1576091160399-112ba8d25d1f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
+ image: 'https://fastmedchina.com/cdn/shop/files/productimage1.webp?v=1780474896',
  duration: '4-5 hours',
  reportTime: '48 hours',
  idealFor: 'Adults over 40 years',
@@ -154,7 +154,7 @@ const HealthPackages = () => {
  price: 'ETB 5,500',
  originalPrice: 'ETB 7,000',
  description: 'Specialized health screening focused on women\'s health needs',
- image: 'https://images.unsplash.com/photo-1594824475217-34a83d43827b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
+ image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpnHOtIFxy4VWPCbly-W3NzM9lbu1_0KjSv9IIyyA412BTdS3NmkVpktbZ&s=10',
  duration: '3-4 hours',
  reportTime: '48 hours',
  idealFor: 'Women 25+ years',
@@ -424,9 +424,7 @@ const HealthPackages = () => {
  >
  Book This Package
  </Link>
- <button className="theme-bg-surface theme-text-secondary px-6 py-2 rounded-lg theme-hover transition-colors text-sm font-medium">
- View Full Details
- </button>
+
  </div>
  </div>
  </div>

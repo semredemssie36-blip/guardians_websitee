@@ -84,7 +84,7 @@ const Home = () => {
 
  const healthPackages = [
  { name: 'Basic Health Screening', price: 'ETB 2,500', description: 'Essential tests for your routine health check', image: 'https://images.unsplash.com/photo-1559757175-0eb30cd8c063?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80', popular: false },
- { name: 'Comprehensive Health Screening', price: 'ETB 6,500', description: 'Complete assessment for your overall well-being', image: 'https://images.unsplash.com/photo-1576091160399-112ba8d25d1f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80', popular: true },
+ { name: 'Comprehensive Health Screening', price: 'ETB 6,500', description: 'Complete assessment for your overall well-being', image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcX9FcJEHYkfsHClomr629LjlQ9G2-pW3pyKc-SsKU7TZNavYoLlZpTnk&s=10', popular: true },
  { name: 'Pre-Employment Screening', price: 'ETB 3,000', description: 'Required tests for employment and occupational health', image: 'https://images.unsplash.com/photo-1582750433449-648ed127bb54?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80', popular: false }
  ];
 
