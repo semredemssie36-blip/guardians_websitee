@@ -202,7 +202,7 @@ const About = () => {
  alt="Guardians Diagnostic Center facility"
  className="rounded-2xl theme-shadow-2xl w-full"
  />
- <div className="absolute -bottom-6 -left-6 theme-bg-card p-5 rounded-xl theme-shadow-lg border-l-4 border-guardians-navy">
+ <div className="hidden sm:block absolute -bottom-6 -left-6 theme-bg-card p-5 rounded-xl theme-shadow-lg border-l-4 border-guardians-navy">
  <div className="flex items-center space-x-3">
  <div className="theme-icon-bg-navy p-3 rounded-full">
  <ShieldCheckIcon className="h-7 w-7 theme-icon-navy" />
@@ -303,7 +303,7 @@ const About = () => {
  alt="Guardians vision for healthcare in Ethiopia"
  className="rounded-2xl theme-shadow-2xl w-full"
  />
- <div className="absolute -bottom-6 -right-6 theme-bg-card p-5 rounded-xl theme-shadow-lg border-l-4 border-guardians-cyan">
+ <div className="hidden sm:block absolute -bottom-6 -right-6 theme-bg-card p-5 rounded-xl theme-shadow-lg border-l-4 border-guardians-cyan">
  <div className="flex items-center space-x-3">
  <div className="theme-icon-bg-cyan p-3 rounded-full">
  <EyeIcon className="h-5 w-5 theme-icon-cyan" />
@@ -514,7 +514,7 @@ const About = () => {
  alt="Guardians commitment to patients"
  className="rounded-2xl theme-shadow-2xl w-full"
  />
- <div className="absolute -bottom-6 -right-6 theme-bg-card p-6 rounded-xl theme-shadow-lg border-l-4 border-guardians-cyan">
+ <div className="hidden sm:block absolute -bottom-6 -right-6 theme-bg-card p-6 rounded-xl theme-shadow-lg border-l-4 border-guardians-cyan">
  <div className="flex items-center space-x-4">
  <div className="theme-icon-bg-cyan p-3 rounded-full">
  <CheckCircleIcon className="h-5 w-5 theme-icon-cyan" />

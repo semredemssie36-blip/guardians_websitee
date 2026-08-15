@@ -7,10 +7,18 @@
 @layer base {
   html {
     font-family: 'Inter', system-ui, sans-serif;
+    overflow-x: hidden;
   }
   
   body {
-    @apply bg-white text-gray-900 leading-relaxed;
+    @apply text-gray-900 leading-relaxed;
+    overflow-x: hidden;
+    max-width: 100%;
+  }
+
+  /* Prevent any element from causing horizontal scroll */
+  * {
+    max-width: 100%;
   }
 }
 

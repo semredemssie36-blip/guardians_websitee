@@ -179,7 +179,7 @@ const Home = () => {
  </section>
 
  {/* ─── QUICK ACTION CARDS ────────────────────────────── */}
- <section className="relative -mt-16 z-10">
+ <section className="relative -mt-8 sm:-mt-16 z-10 px-1 sm:px-0">
  <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
  <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
  <a href="tel:+251911234567" className="theme-bg-card rounded-2xl p-6 theme-shadow-xl hover:theme-shadow-2xl transition-all duration-300 group border-l-4 border-green-500 hover:border-green-600">
@@ -276,7 +276,7 @@ const Home = () => {
  alt="Guardians Diagnostic Center"
  className="rounded-2xl theme-shadow-2xl w-full"
  />
- <div className="absolute -bottom-6 -left-6 theme-bg-card p-5 rounded-xl theme-shadow-lg border-l-4 border-guardians-navy">
+ <div className="hidden sm:block absolute -bottom-6 -left-6 theme-bg-card p-5 rounded-xl theme-shadow-lg border-l-4 border-guardians-navy">
  <div className="flex items-center space-x-3">
  <div className="theme-icon-bg-navy p-3 rounded-full">
  <ShieldCheckIcon className="h-7 w-7 theme-icon-navy" />
@@ -405,7 +405,7 @@ const Home = () => {
  alt="Corporate Health Services"
  className="rounded-2xl theme-shadow-2xl w-full"
  />
- <div className="absolute -top-6 -right-6 theme-bg-card p-5 rounded-xl theme-shadow-lg border-l-4 border-guardians-cyan">
+ <div className="hidden sm:block absolute -top-6 -right-6 theme-bg-card p-5 rounded-xl theme-shadow-lg border-l-4 border-guardians-cyan">
  <div className="text-center">
  <div className="text-3xl font-bold theme-text-primary-brand">500+</div>
  <div className="text-sm theme-text-secondary">Corporate Clients</div>
@@ -479,7 +479,7 @@ const Home = () => {
  alt="Home sample collection service"
  className="rounded-2xl shadow-2xl w-full"
  />
- <div className="absolute -bottom-6 -right-6 bg-white p-5 rounded-xl shadow-lg border-l-4 border-guardians-cyan">
+ <div className="hidden sm:block absolute -bottom-6 -right-6 bg-white p-5 rounded-xl shadow-lg border-l-4 border-guardians-cyan">
  <div className="flex items-center space-x-3">
  <div className="theme-icon-bg-cyan p-3 rounded-full">
  <ClockIcon className="h-7 w-7 theme-icon-cyan" />

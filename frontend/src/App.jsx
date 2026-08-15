@@ -24,7 +24,7 @@ function App() {
   return (
     <ThemeProvider>
       <Router>
-        <div className="min-h-screen theme-bg-background">
+        <div className="min-h-screen theme-bg-background overflow-x-hidden">
           <Navbar />
           <main>
             <Routes>

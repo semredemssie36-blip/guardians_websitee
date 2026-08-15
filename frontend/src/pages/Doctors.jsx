@@ -428,7 +428,7 @@ const Doctors = () => {
  alt="Guardians medical team"
  className="rounded-2xl theme-shadow-2xl"
  />
- <div className="absolute -bottom-6 -left-6 theme-bg-card p-6 rounded-xl theme-shadow-lg border-l-4 border-guardians-navy">
+ <div className="hidden sm:block absolute -bottom-6 -left-6 theme-bg-card p-6 rounded-xl theme-shadow-lg border-l-4 border-guardians-navy">
  <div className="flex items-center space-x-4">
  <div className="theme-icon-bg-navy p-3 rounded-full">
  <UserIcon className="h-8 w-8 theme-icon-navy" />
