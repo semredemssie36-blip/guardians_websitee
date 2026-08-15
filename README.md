@@ -21,4 +21,6 @@ This website serves as the digital front door for Guardians Diagnostic Center, a
 - **CORS** - Cross-origin resource sharing
 - **dotenv** - Environment variable management
 - **Nodemon** - Development hot reload
-  **by Semre**
+
+
+- **by Semre**
