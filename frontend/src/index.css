@@ -21,6 +21,42 @@
 }
 
 @layer components {
+  /* Date/time input icons — force visible in both light and dark themes */
+  input[type="date"],
+  input[type="time"],
+  input[type="datetime-local"] {
+    color-scheme: light;
+  }
+
+  .theme-dark input[type="date"],
+  .theme-dark input[type="time"],
+  .theme-dark input[type="datetime-local"] {
+    color-scheme: dark;
+  }
+
+  /* Make the calendar/clock icon always visible in light mode */
+  input[type="date"]::-webkit-calendar-picker-indicator,
+  input[type="time"]::-webkit-calendar-picker-indicator,
+  input[type="datetime-local"]::-webkit-calendar-picker-indicator {
+    cursor: pointer;
+    opacity: 0.7;
+    filter: invert(0.3);
+  }
+
+  input[type="date"]::-webkit-calendar-picker-indicator:hover,
+  input[type="time"]::-webkit-calendar-picker-indicator:hover {
+    opacity: 1;
+  }
+
+  .theme-dark input[type="date"]::-webkit-calendar-picker-indicator,
+  .theme-dark input[type="time"]::-webkit-calendar-picker-indicator,
+  .theme-dark input[type="datetime-local"]::-webkit-calendar-picker-indicator {
+    filter: invert(1);
+    opacity: 0.8;
+  }
+}
+
+@layer components {
   /* Custom components matching the exact UI */
   .btn-primary {
     @apply bg-medical-blue hover:bg-blue-800 text-white font-medium py-3 px-6 rounded-lg transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2;
