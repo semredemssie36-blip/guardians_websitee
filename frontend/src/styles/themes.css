@@ -1,0 +1,201 @@
+/* Base theme styles with CSS variables */
+:root {
+  /* Default to light theme */
+  --color-primary: #1B365D;
+  --color-secondary: #5CB3D9;
+  --color-accent: #FF4444;
+  --color-success: #10B981;
+  --color-warning: #F59E0B;
+  --color-background: #FFFFFF;
+  --color-surface: #F9FAFB;
+  --color-card: #FFFFFF;
+  --color-textPrimary: #111827;
+  --color-textSecondary: #6B7280;
+  --color-textMuted: #9CA3AF;
+  --color-border: #E5E7EB;
+  --color-borderHover: #D1D5DB;
+  --color-hover: #F3F4F6;
+  --color-active: #E5E7EB;
+  --color-error: #EF4444;
+  --color-info: #3B82F6;
+  
+  /* Border system with brand colors */
+  --border-guardians-navy: #1B365D;
+  --border-guardians-cyan: #5CB3D9;
+  --border-guardians-red: #FF4444;
+}
+
+/* Light theme overrides (default) */
+.theme-light {
+  --color-primary: #1B365D;
+  --color-secondary: #5CB3D9;
+  --color-accent: #FF4444;
+  --color-success: #10B981;
+  --color-warning: #F59E0B;
+  --color-background: #FFFFFF;
+  --color-surface: #F9FAFB;
+  --color-card: #FFFFFF;
+  --color-textPrimary: #111827;
+  --color-textSecondary: #6B7280;
+  --color-textMuted: #9CA3AF;
+  --color-border: #E5E7EB;
+  --color-borderHover: #D1D5DB;
+  --color-hover: #F3F4F6;
+  --color-active: #E5E7EB;
+  --color-error: #EF4444;
+  --color-info: #3B82F6;
+}
+
+/* Dark theme */
+.theme-dark {
+  --color-primary: #3B82F6;
+  --color-secondary: #06B6D4;
+  --color-accent: #EF4444;
+  --color-success: #10B981;
+  --color-warning: #F59E0B;
+  --color-background: #0F172A;
+  --color-surface: #1E293B;
+  --color-card: #334155;
+  --color-textPrimary: #F1F5F9;
+  --color-textSecondary: #CBD5E1;
+  --color-textMuted: #64748B;
+  --color-border: #475569;
+  --color-borderHover: #64748B;
+  --color-hover: #475569;
+  --color-active: #64748B;
+  --color-error: #EF4444;
+  --color-info: #3B82F6;
+}
+
+/* Theme utility classes */
+
+/* Background colors */
+.theme-bg-primary { background-color: var(--color-primary); }
+.theme-bg-secondary { background-color: var(--color-secondary); }
+.theme-bg-accent { background-color: var(--color-accent); }
+.theme-bg-background { background-color: var(--color-background); }
+.theme-bg-surface { background-color: var(--color-surface); }
+.theme-bg-card { background-color: var(--color-card); }
+.theme-bg-hover { background-color: var(--color-hover); }
+.theme-bg-active { background-color: var(--color-active); }
+
+/* Background opacity variations */
+.theme-bg-primary-10 { background-color: rgb(from var(--color-primary) r g b / 0.1); }
+.theme-bg-primary-20 { background-color: rgb(from var(--color-primary) r g b / 0.2); }
+.theme-bg-secondary-10 { background-color: rgb(from var(--color-secondary) r g b / 0.1); }
+.theme-bg-secondary-20 { background-color: rgb(from var(--color-secondary) r g b / 0.2); }
+
+/* Text colors */
+.theme-text-primary { color: var(--color-textPrimary); }
+.theme-text-secondary { color: var(--color-textSecondary); }
+.theme-text-muted { color: var(--color-textMuted); }
+.theme-text-primary-brand { color: var(--color-primary); }
+.theme-text-secondary-brand { color: var(--color-secondary); }
+.theme-text-accent { color: var(--color-accent); }
+.theme-text-success { color: var(--color-success); }
+.theme-text-warning { color: var(--color-warning); }
+.theme-text-error { color: var(--color-error); }
+.theme-text-info { color: var(--color-info); }
+
+/* Border colors */
+.theme-border { border-color: var(--color-border); }
+.theme-border-hover { border-color: var(--color-borderHover); }
+.theme-border-primary { border-color: var(--color-primary); }
+.theme-border-secondary { border-color: var(--color-secondary); }
+.theme-border-accent { border-color: var(--color-accent); }
+
+/* Interactive states */
+.theme-hover:hover { background-color: var(--color-hover); }
+.theme-active:active { background-color: var(--color-active); }
+
+/* Button styles */
+.theme-btn-primary {
+  background-color: var(--color-primary);
+  color: white;
+  transition: all 0.2s ease;
+}
+
+.theme-btn-primary:hover {
+  background-color: var(--color-primaryHover, color-mix(in srgb, var(--color-primary) 90%, black));
+  transform: translateY(-1px);
+}
+
+.theme-btn-secondary {
+  background-color: var(--color-secondary);
+  color: white;
+  transition: all 0.2s ease;
+}
+
+.theme-btn-secondary:hover {
+  background-color: var(--color-secondaryHover, color-mix(in srgb, var(--color-secondary) 90%, black));
+  transform: translateY(-1px);
+}
+
+/* Shadow styles */
+.theme-shadow-sm { box-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05); }
+.theme-shadow-md { box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1); }
+.theme-shadow-lg { box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1); }
+.theme-shadow-xl { box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1); }
+
+/* Brand-specific border colors for border-l-4 system */
+.border-guardians-navy { border-color: var(--border-guardians-navy) !important; }
+.border-guardians-cyan { border-color: var(--border-guardians-cyan) !important; }
+.border-guardians-red { border-color: var(--border-guardians-red) !important; }
+
+/* Hover states for brand borders */
+.hover\:border-guardians-navy:hover { border-color: var(--border-guardians-navy) !important; }
+.hover\:border-guardians-cyan:hover { border-color: var(--border-guardians-cyan) !important; }
+.hover\:border-guardians-red:hover { border-color: var(--border-guardians-red) !important; }
+
+/* Focus states */
+.theme-focus:focus {
+  outline: none;
+  ring: 2px solid var(--color-primary);
+  ring-opacity: 50%;
+}
+
+/* Animation utilities for theme transitions */
+.theme-transition {
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+
+/* ─── Icon container backgrounds (theme-aware) ──────────────────────────────
+   These ensure icons are always visible in both light and dark themes.
+   The problem with bg-guardians-navy/10 + text-guardians-navy in dark mode:
+   dark card (#334155) + 10% navy opacity = near-invisible container,
+   and the icon color is also dark navy → icon disappears.
+   Fix: use explicit light backgrounds for icon containers. ─────────────────── */
+
+/* Navy icon container — light blue background, navy icon */
+.theme-icon-bg-navy {
+  background-color: #DBEAFE;   /* blue-100 — visible on both light & dark cards */
+}
+.theme-dark .theme-icon-bg-navy {
+  background-color: #1E3A5F;   /* deeper navy tint — visible on dark card #334155 */
+}
+
+/* Cyan icon container */
+.theme-icon-bg-cyan {
+  background-color: #CFFAFE;   /* cyan-100 */
+}
+.theme-dark .theme-icon-bg-cyan {
+  background-color: #164E63;   /* dark cyan */
+}
+
+/* Icon colors that adapt to theme */
+.theme-icon-navy {
+  color: #1B365D;              /* light mode: dark navy on light bg */
+}
+.theme-dark .theme-icon-navy {
+  color: #93C5FD;              /* dark mode: light blue — visible on dark bg */
+}
+
+.theme-icon-cyan {
+  color: #0E7490;
+}
+.theme-dark .theme-icon-cyan {
+  color: #67E8F9;
+}
+
+/* Shadow 2xl */
+.theme-shadow-2xl { box-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25); }

@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    font-family: 'Inter', system-ui, sans-serif;
+  }
+  
+  body {
+    @apply bg-white text-gray-900 leading-relaxed;
+  }
+}
+
+@layer components {
+  /* Custom components matching the exact UI */
+  .btn-primary {
+    @apply bg-medical-blue hover:bg-blue-800 text-white font-medium py-3 px-6 rounded-lg transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2;
+  }
+  
+  .btn-secondary {
+    @apply bg-white hover:bg-gray-50 text-medical-blue border-2 border-medical-blue font-medium py-3 px-6 rounded-lg transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2;
+  }
+
+  .hero-gradient {
+    @apply bg-gradient-to-br from-blue-600 via-medical-blue to-blue-800;
+  }
+
+  .medical-pattern {
+    background-image: radial-gradient(circle at 1px 1px, rgba(255,255,255,0.1) 1px, transparent 0);
+    background-size: 20px 20px;
+  }
+
+  .medical-shadow {
+    box-shadow: 0 4px 6px -1px rgba(30, 64, 175, 0.1), 0 2px 4px -1px rgba(30, 64, 175, 0.06);
+  }
+
+  .medical-shadow-lg {
+    box-shadow: 0 10px 15px -3px rgba(30, 64, 175, 0.15), 0 4px 6px -2px rgba(30, 64, 175, 0.1);
+  }
+}
