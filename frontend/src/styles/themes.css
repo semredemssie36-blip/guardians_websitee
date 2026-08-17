@@ -1,0 +1,217 @@
+/* ═══════════════════════════════════════════════════════════════════
+   Guardians Diagnostic Center — Theme System
+   Brand colors extracted from the official logo:
+     Navy  #1A3A6B  — "GUARDIANS" text, stethoscope earpieces
+     Cyan  #5BB3E4  — Stethoscope body, "DIAGNOSTIC CENTER" text
+     Red   #E8392A  — Medical cross
+   ═══════════════════════════════════════════════════════════════════ */
+
+:root {
+  --color-primary:       #1A3A6B;
+  --color-secondary:     #5BB3E4;
+  --color-accent:        #E8392A;
+  --color-success:       #10B981;
+  --color-warning:       #F59E0B;
+  --color-background:    #FFFFFF;
+  --color-surface:       #F7FAFD;
+  --color-card:          #FFFFFF;
+  --color-textPrimary:   #111827;
+  --color-textSecondary: #4B5563;
+  --color-textMuted:     #9CA3AF;
+  --color-border:        #E2EAF2;
+  --color-borderHover:   #C8D8EA;
+  --color-hover:         #EBF4FA;
+  --color-active:        #D8ECF7;
+  --color-error:         #E8392A;
+  --color-info:          #2563EB;
+
+  /* Brand border shorthand */
+  --border-guardians-navy: #1A3A6B;
+  --border-guardians-cyan: #5BB3E4;
+  --border-guardians-red:  #E8392A;
+}
+
+/* ─── Light theme ─────────────────────────────────────────────────── */
+.theme-light {
+  --color-primary:       #1A3A6B;
+  --color-secondary:     #5BB3E4;
+  --color-accent:        #E8392A;
+  --color-success:       #10B981;
+  --color-warning:       #F59E0B;
+  --color-background:    #FFFFFF;
+  --color-surface:       #F7FAFD;
+  --color-card:          #FFFFFF;
+  --color-textPrimary:   #111827;
+  --color-textSecondary: #4B5563;
+  --color-textMuted:     #9CA3AF;
+  --color-border:        #E2EAF2;
+  --color-borderHover:   #C8D8EA;
+  --color-hover:         #EBF4FA;
+  --color-active:        #D8ECF7;
+  --color-error:         #E8392A;
+  --color-info:          #2563EB;
+}
+
+/* ─── Dark theme ──────────────────────────────────────────────────── */
+.theme-dark {
+  --color-primary:       #4A90D9;
+  --color-secondary:     #5BB3E4;
+  --color-accent:        #E8392A;
+  --color-success:       #10B981;
+  --color-warning:       #F59E0B;
+  --color-background:    #0D1B2E;
+  --color-surface:       #162035;
+  --color-card:          #1E2D44;
+  --color-textPrimary:   #F0F6FF;
+  --color-textSecondary: #A8BBCF;
+  --color-textMuted:     #5C7A94;
+  --color-border:        #2A3F57;
+  --color-borderHover:   #3A5270;
+  --color-hover:         #1E2D44;
+  --color-active:        #243450;
+  --color-error:         #F07060;
+  --color-info:          #60A5FA;
+}
+
+/* ─── Background utilities ────────────────────────────────────────── */
+.theme-bg-primary    { background-color: var(--color-primary); }
+.theme-bg-secondary  { background-color: var(--color-secondary); }
+.theme-bg-accent     { background-color: var(--color-accent); }
+.theme-bg-background { background-color: var(--color-background); }
+.theme-bg-surface    { background-color: var(--color-surface); }
+.theme-bg-card       { background-color: var(--color-card); }
+.theme-bg-hover      { background-color: var(--color-hover); }
+.theme-bg-active     { background-color: var(--color-active); }
+
+/* Tinted backgrounds */
+.theme-bg-primary-5  { background-color: color-mix(in srgb, var(--color-primary) 5%, transparent); }
+.theme-bg-primary-10 { background-color: color-mix(in srgb, var(--color-primary) 10%, transparent); }
+.theme-bg-primary-15 { background-color: color-mix(in srgb, var(--color-primary) 15%, transparent); }
+.theme-bg-secondary-10 { background-color: color-mix(in srgb, var(--color-secondary) 10%, transparent); }
+
+/* ─── Text utilities ──────────────────────────────────────────────── */
+.theme-text-primary        { color: var(--color-textPrimary); }
+.theme-text-secondary      { color: var(--color-textSecondary); }
+.theme-text-muted          { color: var(--color-textMuted); }
+.theme-text-primary-brand  { color: var(--color-primary); }
+.theme-text-secondary-brand{ color: var(--color-secondary); }
+.theme-text-accent         { color: var(--color-accent); }
+.theme-text-success        { color: var(--color-success); }
+.theme-text-warning        { color: var(--color-warning); }
+.theme-text-error          { color: var(--color-error); }
+.theme-text-info           { color: var(--color-info); }
+
+/* ─── Border utilities ────────────────────────────────────────────── */
+.theme-border         { border-color: var(--color-border); }
+.theme-border-hover   { border-color: var(--color-borderHover); }
+.theme-border-primary { border-color: var(--color-primary); }
+.theme-border-secondary { border-color: var(--color-secondary); }
+.theme-border-accent  { border-color: var(--color-accent); }
+
+/* ─── Brand border colors (used with border-l-4 etc.) ────────────── */
+.border-guardians-navy { border-color: var(--border-guardians-navy) !important; }
+.border-guardians-cyan { border-color: var(--border-guardians-cyan) !important; }
+.border-guardians-red  { border-color: var(--border-guardians-red)  !important; }
+
+.hover\:border-guardians-navy:hover { border-color: var(--border-guardians-navy) !important; }
+.hover\:border-guardians-cyan:hover { border-color: var(--border-guardians-cyan) !important; }
+.hover\:border-guardians-red:hover  { border-color: var(--border-guardians-red)  !important; }
+
+/* ─── Interactive states ──────────────────────────────────────────── */
+.theme-hover:hover  { background-color: var(--color-hover); }
+.theme-active:active { background-color: var(--color-active); }
+
+/* ─── Button styles ───────────────────────────────────────────────── */
+.theme-btn-primary {
+  background-color: var(--color-primary);
+  color: white;
+  transition: all 0.2s ease;
+}
+.theme-btn-primary:hover {
+  background-color: color-mix(in srgb, var(--color-primary) 85%, black);
+  transform: translateY(-1px);
+}
+
+.theme-btn-secondary {
+  background-color: var(--color-secondary);
+  color: white;
+  transition: all 0.2s ease;
+}
+.theme-btn-secondary:hover {
+  background-color: color-mix(in srgb, var(--color-secondary) 85%, black);
+  transform: translateY(-1px);
+}
+
+.theme-btn-outline {
+  background-color: transparent;
+  color: var(--color-primary);
+  border: 2px solid var(--color-primary);
+  transition: all 0.2s ease;
+}
+.theme-btn-outline:hover {
+  background-color: var(--color-primary);
+  color: white;
+}
+
+/* ─── Shadow utilities ────────────────────────────────────────────── */
+.theme-shadow-sm  { box-shadow: 0 1px 3px 0 rgb(26 58 107 / 0.08); }
+.theme-shadow-md  { box-shadow: 0 4px 8px -1px rgb(26 58 107 / 0.12), 0 2px 4px -2px rgb(26 58 107 / 0.08); }
+.theme-shadow-lg  { box-shadow: 0 8px 16px -3px rgb(26 58 107 / 0.12), 0 4px 6px -4px rgb(26 58 107 / 0.08); }
+.theme-shadow-xl  { box-shadow: 0 12px 24px -5px rgb(26 58 107 / 0.14), 0 6px 10px -6px rgb(26 58 107 / 0.10); }
+.theme-shadow-2xl { box-shadow: 0 20px 40px -8px rgb(26 58 107 / 0.18), 0 8px 12px -8px rgb(26 58 107 / 0.12); }
+
+/* ─── Icon container system ───────────────────────────────────────── */
+/* Ensures icons are always visible in both light and dark themes.    */
+
+.theme-icon-bg-navy {
+  background-color: #DBEAFE; /* blue-100 — visible on both light & dark cards */
+}
+.theme-dark .theme-icon-bg-navy {
+  background-color: #1E3460; /* visible on dark card bg */
+}
+
+.theme-icon-bg-cyan {
+  background-color: #CFFAFE; /* cyan-100 */
+}
+.theme-dark .theme-icon-bg-cyan {
+  background-color: #0E3D57;
+}
+
+.theme-icon-bg-red {
+  background-color: #FEE2E2; /* red-100 */
+}
+.theme-dark .theme-icon-bg-red {
+  background-color: #4A1212;
+}
+
+.theme-icon-navy {
+  color: #1A3A6B;
+}
+.theme-dark .theme-icon-navy {
+  color: #93C5FD;
+}
+
+.theme-icon-cyan {
+  color: #0C6FAD;
+}
+.theme-dark .theme-icon-cyan {
+  color: #67E8F9;
+}
+
+.theme-icon-red {
+  color: #E8392A;
+}
+.theme-dark .theme-icon-red {
+  color: #FCA5A5;
+}
+
+/* ─── Theme transition ────────────────────────────────────────────── */
+.theme-transition {
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+
+/* ─── Focus ring ──────────────────────────────────────────────────── */
+.theme-focus:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px color-mix(in srgb, var(--color-primary) 25%, transparent);
+}

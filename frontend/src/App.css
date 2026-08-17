@@ -1,0 +1,28 @@
+/* Custom styles that complement Tailwind CSS */
+.hero-gradient {
+  background: linear-gradient(135deg, #0066cc 0%, #004499 100%);
+}
+
+.medical-pattern {
+  background-image: 
+    radial-gradient(circle at 25% 25%, rgba(0, 102, 204, 0.1) 0%, transparent 50%),
+    radial-gradient(circle at 75% 75%, rgba(0, 168, 107, 0.1) 0%, transparent 50%);
+}
+
+.scroll-smooth {
+  scroll-behavior: smooth;
+}
+
+/* Loading animation */
+.loading {
+  animation: pulse 2s infinite;
+}
+
+/* Custom shadows for medical feel */
+.medical-shadow {
+  box-shadow: 0 4px 6px -1px rgba(0, 102, 204, 0.1), 0 2px 4px -1px rgba(0, 102, 204, 0.06);
+}
+
+.medical-shadow-lg {
+  box-shadow: 0 10px 15px -3px rgba(0, 102, 204, 0.1), 0 4px 6px -2px rgba(0, 102, 204, 0.05);
+}

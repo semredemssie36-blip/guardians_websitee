@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    font-family: 'Inter', system-ui, sans-serif;
+  }
+  
+  body {
+    @apply text-gray-900 leading-relaxed;
+    max-width: 100%;
+  }
+
+  /* Prevent any element from causing horizontal scroll */
+  * {
+    max-width: 100%;
+  }
+}
+
+@layer components {
+  /* Date/time input icons — force visible in both light and dark themes */
+  input[type="date"],
+  input[type="time"],
+  input[type="datetime-local"] {
+    color-scheme: light;
+  }
+
+  .theme-dark input[type="date"],
+  .theme-dark input[type="time"],
+  .theme-dark input[type="datetime-local"] {
+    color-scheme: dark;
+  }
+
+  /* Make the calendar/clock icon always visible in light mode */
+  input[type="date"]::-webkit-calendar-picker-indicator,
+  input[type="time"]::-webkit-calendar-picker-indicator,
+  input[type="datetime-local"]::-webkit-calendar-picker-indicator {
+    cursor: pointer;
+    opacity: 0.7;
+    filter: invert(0.3);
+  }
+
+  input[type="date"]::-webkit-calendar-picker-indicator:hover,
+  input[type="time"]::-webkit-calendar-picker-indicator:hover {
+    opacity: 1;
+  }
+
+  .theme-dark input[type="date"]::-webkit-calendar-picker-indicator,
+  .theme-dark input[type="time"]::-webkit-calendar-picker-indicator,
+  .theme-dark input[type="datetime-local"]::-webkit-calendar-picker-indicator {
+    filter: invert(1);
+    opacity: 0.8;
+  }
+
+  /* ─── Curved wave underline accent ─────────────────────────────────────────
+     Usage: wrap a word in <span className="highlight-word">word</span>
+     The SVG wave uses the brand cyan color #5CB3D9
+  ──────────────────────────────────────────────────────────────────────────── */
+  .highlight-word {
+    color: #5CB3D9;
+    display: inline-block;
+    position: relative;
+    white-space: nowrap;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 12' preserveAspectRatio='none'%3E%3Cpath d='M0,8 C30,2 70,12 100,6 C130,0 170,10 200,4' stroke='%235CB3D9' stroke-width='3' fill='none' stroke-linecap='round'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: center bottom 0px;
+    background-size: 100% 10px;
+    padding-bottom: 10px;
+  }
+
+  /* Navy variant */
+  .highlight-word-navy {
+    color: #1B365D;
+    display: inline-block;
+    position: relative;
+    white-space: nowrap;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 12' preserveAspectRatio='none'%3E%3Cpath d='M0,8 C30,2 70,12 100,6 C130,0 170,10 200,4' stroke='%231B365D' stroke-width='3' fill='none' stroke-linecap='round'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: center bottom 0px;
+    background-size: 100% 10px;
+    padding-bottom: 10px;
+  }
+
+  .theme-dark .highlight-word-navy {
+    color: #93C5FD;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 12' preserveAspectRatio='none'%3E%3Cpath d='M0,8 C30,2 70,12 100,6 C130,0 170,10 200,4' stroke='%2393C5FD' stroke-width='3' fill='none' stroke-linecap='round'/%3E%3C/svg%3E");
+  }
+}
+
+@layer components {
+  /* Custom components matching the exact UI */
+  .btn-primary {
+    @apply bg-medical-blue hover:bg-blue-800 text-white font-medium py-3 px-6 rounded-lg transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2;
+  }
+  
+  .btn-secondary {
+    @apply bg-white hover:bg-gray-50 text-medical-blue border-2 border-medical-blue font-medium py-3 px-6 rounded-lg transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2;
+  }
+
+  .hero-gradient {
+    @apply bg-gradient-to-br from-blue-600 via-medical-blue to-blue-800;
+  }
+
+  .medical-pattern {
+    background-image: radial-gradient(circle at 1px 1px, rgba(255,255,255,0.1) 1px, transparent 0);
+    background-size: 20px 20px;
+  }
+
+  .medical-shadow {
+    box-shadow: 0 4px 6px -1px rgba(30, 64, 175, 0.1), 0 2px 4px -1px rgba(30, 64, 175, 0.06);
+  }
+
+  .medical-shadow-lg {
+    box-shadow: 0 10px 15px -3px rgba(30, 64, 175, 0.15), 0 4px 6px -2px rgba(30, 64, 175, 0.1);
+  }
+}
