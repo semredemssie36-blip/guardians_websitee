@@ -95,22 +95,22 @@ const Contact = () => {
     <div className="theme-bg-background">
 
       {/* Hero */}
-      <section className="relative h-[340px] overflow-hidden">
+      <section className="relative min-h-[240px] sm:min-h-[340px] overflow-hidden">
         <img
           src="https://images.unsplash.com/photo-1551190822-a9333d879b1f?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80"
           alt="Contact Guardians"
-          className="w-full h-full object-cover"
+          className="absolute inset-0 w-full h-full object-cover"
         />
         <div className="absolute inset-0 bg-gradient-to-r from-black/65 via-black/40 to-transparent" />
-        <div className="absolute inset-0 flex items-center">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="relative flex items-center min-h-[240px] sm:min-h-[340px] py-10 sm:py-14">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
             <div className="text-white max-w-2xl">
-              <p className="text-blue-200 font-semibold text-sm tracking-widest uppercase mb-3">Contact Us</p>
-              <h1 className="text-4xl lg:text-5xl font-bold mb-4 leading-tight">
+              <p className="text-blue-200 font-semibold text-xs sm:text-sm tracking-widest uppercase mb-2 sm:mb-3">Contact Us</p>
+              <h1 className="text-2xl sm:text-4xl lg:text-5xl font-bold mb-3 sm:mb-4 leading-tight">
                 We Are Here to{' '}
                 <span style={{ color: '#5BB3E4' }}>Help</span>
               </h1>
-              <p className="text-blue-50/90 text-lg max-w-xl leading-relaxed">
+              <p className="text-blue-50/90 text-sm sm:text-lg max-w-xl leading-relaxed">
                 Reach us by phone, WhatsApp, email, or visit us at our center in Addis Ababa.
               </p>
             </div>

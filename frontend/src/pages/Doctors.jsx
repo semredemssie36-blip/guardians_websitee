@@ -22,40 +22,40 @@ const Doctors = () => (
   <div className="theme-bg-background">
 
     {/* Hero */}
-    <section className="relative h-[400px] overflow-hidden">
+    <section className="relative min-h-[320px] sm:min-h-[400px] overflow-hidden">
       <img
         src="https://images.unsplash.com/photo-1551601651-2a8555f1a136?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80"
         alt="Guardians Medical Team"
-        className="w-full h-full object-cover"
+        className="absolute inset-0 w-full h-full object-cover"
       />
       <div className="absolute inset-0 bg-gradient-to-r from-black/65 via-black/40 to-transparent" />
-      <div className="absolute inset-0 flex items-center">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="relative flex items-center min-h-[320px] sm:min-h-[400px] py-12 sm:py-16">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
           <div className="text-white max-w-2xl">
-            <p className="text-blue-200 font-semibold text-sm tracking-widest uppercase mb-3">
+            <p className="text-blue-200 font-semibold text-xs sm:text-sm tracking-widest uppercase mb-2 sm:mb-3">
               Our Medical Team
             </p>
-            <h1 className="text-4xl lg:text-5xl font-bold mb-5 leading-tight">
+            <h1 className="text-2xl sm:text-4xl lg:text-5xl font-bold mb-3 sm:mb-5 leading-tight">
               Qualified Professionals{' '}
               <span style={{ color: '#5BB3E4' }}>You Can Trust</span>
             </h1>
-            <p className="text-blue-50/90 text-lg mb-8 max-w-xl leading-relaxed">
+            <p className="text-blue-50/90 text-sm sm:text-lg mb-5 sm:mb-8 max-w-xl leading-relaxed">
               Guardians is staffed by qualified, experienced medical professionals committed
               to delivering accurate results and compassionate patient care.
             </p>
-            <div className="flex flex-wrap gap-3">
+            <div className="flex flex-col sm:flex-row flex-wrap gap-2.5 sm:gap-3">
               <Link
                 to="/appointment"
-                className="theme-btn-primary px-7 py-3.5 rounded-lg font-semibold inline-flex items-center gap-2 theme-shadow-lg"
+                className="theme-btn-primary px-6 py-3 sm:px-7 sm:py-3.5 rounded-lg font-semibold inline-flex items-center justify-center gap-2 theme-shadow-lg text-sm sm:text-base"
               >
-                <CalendarDaysIcon className="h-5 w-5" />
+                <CalendarDaysIcon className="h-4 w-4 sm:h-5 sm:w-5 flex-shrink-0" />
                 Book a Consultation
               </Link>
               <a
                 href="tel:+251911234567"
-                className="bg-white/10 border border-white/50 text-white font-semibold px-7 py-3.5 rounded-lg hover:bg-white/20 transition-colors inline-flex items-center gap-2"
+                className="bg-white/10 border border-white/50 text-white font-semibold px-6 py-3 sm:px-7 sm:py-3.5 rounded-lg hover:bg-white/20 transition-colors inline-flex items-center justify-center gap-2 text-sm sm:text-base"
               >
-                <PhoneIcon className="h-5 w-5" />
+                <PhoneIcon className="h-4 w-4 sm:h-5 sm:w-5 flex-shrink-0" />
                 Call for Guidance
               </a>
             </div>

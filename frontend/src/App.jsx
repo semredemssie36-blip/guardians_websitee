@@ -11,6 +11,7 @@ import Doctors from './pages/Doctors';
 import PatientInfo from './pages/PatientInfo';
 import Results from './pages/Results';
 import Blog from './pages/Blog';
+import ArticleDetail from './pages/ArticleDetail';
 import FAQ from './pages/FAQ';
 import Contact from './pages/Contact';
 import Appointment from './pages/Appointment';
@@ -37,6 +38,7 @@ function App() {
               <Route path="/patient-info" element={<PatientInfo />} />
               <Route path="/results" element={<Results />} />
               <Route path="/blog" element={<Blog />} />
+              <Route path="/blog/:slug" element={<ArticleDetail />} />
               <Route path="/faq" element={<FAQ />} />
               <Route path="/contact" element={<Contact />} />
               <Route path="/appointment" element={<Appointment />} />

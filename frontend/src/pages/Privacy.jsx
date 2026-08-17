@@ -179,29 +179,29 @@ const Privacy = () => (
   <div className="theme-bg-background">
 
     {/* Hero */}
-    <section className="relative h-[300px] overflow-hidden">
+    <section className="relative min-h-[220px] sm:min-h-[300px] overflow-hidden">
       <img
         src="https://images.unsplash.com/photo-1551190822-a9333d879b1f?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80"
         alt="Privacy Policy"
-        className="w-full h-full object-cover"
+        className="absolute inset-0 w-full h-full object-cover"
       />
       <div className="absolute inset-0 bg-gradient-to-r from-black/70 via-black/50 to-black/20" />
-      <div className="absolute inset-0 flex items-center">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="relative flex items-center min-h-[220px] sm:min-h-[300px] py-10 sm:py-14">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
           <div className="text-white max-w-2xl">
-            <div className="flex items-center gap-3 mb-4">
+            <div className="flex items-center gap-3 mb-3 sm:mb-4">
               <div className="bg-white/20 p-2.5 rounded-xl">
                 <ShieldCheckIcon className="h-6 w-6 text-white" />
               </div>
-              <p className="font-semibold text-sm tracking-widest uppercase text-blue-200">
+              <p className="font-semibold text-xs sm:text-sm tracking-widest uppercase text-blue-200">
                 Legal
               </p>
             </div>
-            <h1 className="text-4xl lg:text-5xl font-bold mb-3 leading-tight">
+            <h1 className="text-2xl sm:text-4xl lg:text-5xl font-bold mb-2 sm:mb-3 leading-tight">
               Privacy{' '}
               <span style={{ color: '#5BB3E4' }}>Policy</span>
             </h1>
-            <p className="text-blue-100 text-sm">Last updated: {lastUpdated}</p>
+            <p className="text-blue-100 text-xs sm:text-sm">Last updated: {lastUpdated}</p>
           </div>
         </div>
       </div>

@@ -140,35 +140,35 @@ const About = () => (
   <div className="theme-bg-background">
 
     {/* ── Hero ─────────────────────────────────────────────────────── */}
-    <section className="relative h-[480px] overflow-hidden">
+    <section className="relative min-h-[280px] sm:min-h-[480px] overflow-hidden">
       <img
         src="https://images.unsplash.com/photo-1551190822-a9333d879b1f?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80"
         alt="About Guardians Diagnostic Center"
-        className="w-full h-full object-cover"
+        className="absolute inset-0 w-full h-full object-cover"
       />
       <div className="absolute inset-0 bg-gradient-to-r from-black/60 via-black/40 to-black/15" />
-      <div className="absolute inset-0 flex items-center">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="relative flex items-center min-h-[280px] sm:min-h-[480px] py-12 sm:py-16">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
           <div className="text-white max-w-2xl">
-            <p className="text-blue-200 font-semibold text-sm tracking-widest uppercase mb-3">
+            <p className="text-blue-200 font-semibold text-xs sm:text-sm tracking-widest uppercase mb-2 sm:mb-3">
               About Guardians
             </p>
-            <h1 className="text-4xl lg:text-5xl font-bold leading-tight mb-5">
+            <h1 className="text-2xl sm:text-4xl lg:text-5xl font-bold leading-tight mb-3 sm:mb-5">
               Professional. Accessible.{' '}
               <span style={{ color: '#5BB3E4' }}>Trustworthy.</span>
             </h1>
-            <p className="text-lg text-blue-50/90 mb-8 leading-relaxed max-w-xl">
+            <p className="text-sm sm:text-lg text-blue-50/90 mb-5 sm:mb-8 leading-relaxed max-w-xl">
               Learn about our mission, values, and commitment to providing quality
               diagnostic healthcare in Addis Ababa, Ethiopia.
             </p>
-            <div className="flex flex-wrap gap-3">
-              <Link to="/appointment" className="theme-btn-primary px-7 py-3.5 rounded-lg font-semibold inline-flex items-center gap-2 theme-shadow-lg">
-                <CalendarDaysIcon className="h-5 w-5" />
+            <div className="flex flex-col sm:flex-row flex-wrap gap-2.5 sm:gap-3">
+              <Link to="/appointment" className="theme-btn-primary px-6 py-3 sm:px-7 sm:py-3.5 rounded-lg font-semibold inline-flex items-center justify-center gap-2 theme-shadow-lg text-sm sm:text-base">
+                <CalendarDaysIcon className="h-4 w-4 sm:h-5 sm:w-5 flex-shrink-0" />
                 Book Appointment
               </Link>
-              <Link to="/services" className="bg-white/10 border border-white/50 text-white font-semibold px-7 py-3.5 rounded-lg hover:bg-white/20 transition-colors inline-flex items-center gap-2">
+              <Link to="/services" className="bg-white/10 border border-white/50 text-white font-semibold px-6 py-3 sm:px-7 sm:py-3.5 rounded-lg hover:bg-white/20 transition-colors inline-flex items-center justify-center gap-2 text-sm sm:text-base">
                 Our Services
-                <ArrowRightIcon className="h-4 w-4" />
+                <ArrowRightIcon className="h-4 w-4 flex-shrink-0" />
               </Link>
             </div>
           </div>

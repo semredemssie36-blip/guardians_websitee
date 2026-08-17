@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
+import NewsletterForm from '../components/NewsletterForm';
 import {
   HeartIcon,
   ShieldCheckIcon,
@@ -18,6 +19,7 @@ import {
   EnvelopeIcon,
   BookOpenIcon,
   StarIcon,
+
 } from '@heroicons/react/24/outline';
 
 /* ─── Hero slides ──────────────────────────────────────────────────── */
@@ -1090,17 +1092,7 @@ const Home = () => {
               <p className="text-blue-100 mb-5">
                 Subscribe for health tips, service updates, and news from Guardians.
               </p>
-              <div className="flex">
-                <input
-                  type="email"
-                  placeholder="Your email address"
-                  className="flex-1 px-4 py-3 rounded-l-lg text-gray-900 text-sm focus:outline-none"
-                />
-                <button className="bg-white/20 hover:bg-white/30 text-white font-semibold px-5 py-3 rounded-r-lg border-l border-white/20 transition-colors text-sm">
-                  Subscribe
-                </button>
-              </div>
-              <p className="text-blue-200 text-xs mt-2">No spam. Unsubscribe anytime.</p>
+              <NewsletterForm variant="inline" />
             </div>
 
             {/* Emergency */}
