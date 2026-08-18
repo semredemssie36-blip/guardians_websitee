@@ -23,4 +23,4 @@ This website serves as the digital front door for Guardians Diagnostic Center, a
 - **Nodemon** - Development hot reload
 
 
-# by Semre**
+# by Semre

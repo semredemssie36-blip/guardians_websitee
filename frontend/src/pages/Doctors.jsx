@@ -300,6 +300,7 @@ const Doctors = () => {
                       : 'theme-border theme-shadow-md hover:theme-shadow-lg'
                   }`}
                 >
+                  
                   {/* ── Profile header ── */}
                   <div className="grid grid-cols-1 sm:grid-cols-4 gap-0">
 
