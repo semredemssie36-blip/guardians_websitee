@@ -2,7 +2,6 @@
 .hero-gradient {
   background: linear-gradient(135deg, #0066cc 0%, #004499 100%);
 }
-
 .medical-pattern {
   background-image: 
     radial-gradient(circle at 25% 25%, rgba(0, 102, 204, 0.1) 0%, transparent 50%),
